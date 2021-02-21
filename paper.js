@@ -1,0 +1,24 @@
+class Paper
+{
+    constructor(x,y,radius){
+    var options = {
+        isStatic:false,
+        restution:0.2,
+        friction:0.3,
+        density:1.0
+    }
+
+    this.radius=radius
+    this.body=Bodies.circle(x,y,radius,options)
+    World.add(world,this.body);
+
+}
+
+display(){
+    Fill("yellow");
+    elilpseMode(RADIUS);
+    elilpse(this.body.position.x,this.body.position.y,this.radius,this.body)
+}
+
+}
+
